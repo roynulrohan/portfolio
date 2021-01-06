@@ -1,0 +1,31 @@
+.hero {
+    &__content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        .display-1 {
+            font-size: calc(1.625rem + 4.5vw);
+        }
+
+        .hidden {
+            font-size: 0;
+        }
+
+        * {
+            transition: font-size .25s ease-in-out;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        img {
+            max-width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
