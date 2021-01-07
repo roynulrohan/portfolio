@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const AnimatedLetter = ({ letter, animation }) => {
     const [animated, setAnimated] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setAnimated(true);
+        }, Math.floor(Math.random() * 300) + 100);
+    }, []);
 
     return (
         <span

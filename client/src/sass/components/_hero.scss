@@ -8,14 +8,6 @@
         .display-1 {
             font-size: calc(1.625rem + 4.5vw);
         }
-
-        .hidden {
-            font-size: 0;
-        }
-
-        * {
-            transition: font-size 0.25s ease-in-out;
-        }
     }
 
     &__img {

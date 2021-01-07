@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import '../sass/components/_nav.scss';
+
 
 const Nav = () => {
     const [didScroll, setDidScroll] = useState(true);
 
     useEffect(() => {
         document.addEventListener('scroll', () => {
-            setDidScroll(window.scrollY < 300);
+            setDidScroll(window.scrollY < 200);
         });
 
         return () => {
