@@ -1,4 +1,3 @@
-import './sass/App.scss';
 import { CSSTransition } from 'react-transition-group';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
@@ -11,13 +10,8 @@ function App() {
             <CSSTransition in={true} appear={true} timeout={400} classNames='fade' unmountOnExit>
                 <>
                     <Hero />
-                    <hr/>
                     <About />
-                    <hr/>
-                    <div
-                        className='d-flex flex-column justify-content-center align-items-center'
-                        style={{ height: '100vh' }}
-                    ></div>
+                    
                 </>
             </CSSTransition>
         </>

@@ -3,9 +3,9 @@ import AboutSVG from '../assets/guy_sitting_information.svg';
 
 const About = () => {
     return (
-        <section className='container about d-flex flex-column justify-content-center' style={{ height: '100vh' }}>
+        <section className='container d-flex flex-column justify-content-center about' style={{ height: '100vh' }}>
             <h1 className='display-3 text-center'>About Me</h1>
-            <div className='row align-items-center my-5 about__content'>
+            <div className='row align-items-center about__content'>
                 <div className='col-12 col-lg-6 order-md-1 p-3'>
                     <h1 className='display-6 about__text'>
                         My name is Roynul Rohan, and I am a front-end developer driven by{' '}

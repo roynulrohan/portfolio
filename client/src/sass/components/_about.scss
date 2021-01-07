@@ -1,9 +1,15 @@
 .about {
     &__text {
-        font-size: calc(1.2rem + 1vw);
+        font-size: calc(1.1rem + 1vw);
+
+        @include media-breakpoint-down(sm) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: calc(1rem + 1vw);
+        }
 
         @include media-breakpoint-down(lg) {
-           text-align: center;
+            text-align: center;
         }
     }
 
@@ -15,5 +21,9 @@
         @include media-breakpoint-down(lg) {
             width: 60%;
         }
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 1rem !important;
     }
 }
