@@ -1,0 +1,19 @@
+.about {
+    &__text {
+        font-size: calc(1.2rem + 1vw);
+
+        @include media-breakpoint-down(lg) {
+           text-align: center;
+        }
+    }
+
+    &__img {
+        img {
+            max-width: 100%;
+        }
+
+        @include media-breakpoint-down(lg) {
+            width: 60%;
+        }
+    }
+}

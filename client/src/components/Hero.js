@@ -21,29 +21,29 @@ const Hero = () => {
             <div className='d-flex align-items-center hero__content p-5'>
                 <div className='text-nowrap text-center hero__text p-4'>
                     <h1 className='display-5 d-flex justify-content-center'>
-                        {helloMessage.split('').map((letter) => {
+                        {helloMessage.split('').map((letter, index) => {
                             return letter !== ' ' ? (
-                                <AnimatedLetter letter={letter} animation='rubberBand' />
+                                <AnimatedLetter letter={letter} animation='rubberBand' key={`${helloMessage} - ${index}`} />
                             ) : (
-                                <span>&nbsp;</span>
+                                <span key={`${helloMessage} - ${index}`}>&nbsp;</span>
                             );
                         })}
                     </h1>
                     <h1 className='display-1 d-flex justify-content-center'>
-                        {fullName.split('').map((letter) => {
+                        {fullName.split('').map((letter, index) => {
                             return letter !== ' ' ? (
-                                <AnimatedLetter letter={letter} animation='rubberBand' />
+                                <AnimatedLetter letter={letter} animation='rubberBand' key={`${fullName} - ${index}`} />
                             ) : (
-                                <span>&nbsp;</span>
+                                <span key={`${helloMessage} - ${index}`}>&nbsp;</span>
                             );
                         })}
                     </h1>
                     <h1 className={'display-6 pt-4 d-flex justify-content-center' + (hidden ? ' hidden' : '')}>
-                        {titleMessage.split('').map((letter) => {
+                        {titleMessage.split('').map((letter, index) => {
                             return letter !== ' ' ? (
-                                <AnimatedLetter letter={letter} animation='rubberBand' />
+                                <AnimatedLetter letter={letter} animation='rubberBand' key={`${titleMessage} - ${index}`} />
                             ) : (
-                                <span>&nbsp;</span>
+                                <span key={`${helloMessage} - ${index}`}>&nbsp;</span>
                             );
                         })}
                     </h1>
