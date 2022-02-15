@@ -9,7 +9,7 @@ import algorithmImg from '../assets/project-screenshots/algorithm-visualizer.png
 const projects = [
     {
         name: 'Stocks.io',
-        subtitle: 'Full-stack Web App',
+        subtitle: 'Full-Stack Web App',
         description: 'A dummy stock trading platform where users can trade fake stocks. Prices are simulated and update in real-time.',
         image: stocksIoImg,
         tech: 'MERN, Redux, GraphQL, TypeScript, TailwindCSS, JWT, Socket.io, Docker, Azure Apps, DevOps',
@@ -25,7 +25,7 @@ const projects = [
     },
     {
         name: 'Amigo Chat',
-        subtitle: 'Full-stack Web App',
+        subtitle: 'Full-Stack Web App',
         description: 'A chat application where users can chat with each other in real-time. All messaged are preserved in a database.',
         image: amigoChatImg,
         tech: 'MERN, Redux, Bootstrap, Sass, Socket.io',
@@ -33,7 +33,7 @@ const projects = [
     },
     {
         name: 'Algorithm Visualizer',
-        subtitle: 'Front-end',
+        subtitle: 'Front-End',
         description: 'A web app to visualize various sorting algorithms',
         image: algorithmImg,
         tech: 'React, JavaScript, Sorting Algorithms',

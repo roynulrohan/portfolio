@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import myResumePDF from '../assets/my-resume.pdf';
 
 const Nav = () => {
@@ -69,48 +70,79 @@ const Nav = () => {
                         (didScroll ? '' : ' bg-white px-4 p-2 rounded-xl shadow-lg')
                     }>
                     {window.location.pathname === '/' ? (
-                        <Link
-                            smooth
-                            spy
-                            duration={150}
-                            activeClass='bg-gray-100 p-2'
-                            className={
-                                'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' + (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
-                            }
-                            to='main'>
-                            About
-                        </Link>
+                        <>
+                            <Link
+                                smooth
+                                spy
+                                duration={150}
+                                activeClass='bg-gray-100 p-2'
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='main'>
+                                About
+                            </Link>
+                            <Link
+                                smooth
+                                spy
+                                duration={250}
+                                activeClass='bg-gray-200 p-2'
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='projects'>
+                                Projects
+                            </Link>
+                            <Link
+                                smooth
+                                spy
+                                duration={250}
+                                activeClass='bg-gray-200 p-2'
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='contact'>
+                                Contact
+                            </Link>
+                        </>
                     ) : (
-                        <a
-                            className={
-                                'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' + (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
-                            }
-                            href='/'>
-                            About
-                        </a>
+                        <>
+                            <RouterLink
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='/'>
+                                About
+                            </RouterLink>
+                            <RouterLink
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='/'
+                                state={{
+                                    scrollTo: 'projects',
+                                }}>
+                                Projects
+                            </RouterLink>
+                            <RouterLink
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='/'
+                                state={{
+                                    scrollTo: 'contact',
+                                }}>
+                                Contact
+                            </RouterLink>
+                        </>
                     )}
-                    <Link
-                        smooth
-                        spy
-                        duration={250}
-                        activeClass='bg-gray-200 p-2'
-                        className={
-                            'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' + (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
-                        }
-                        to='projects'>
-                        Projects
-                    </Link>
-                    <Link
-                        smooth
-                        spy
-                        duration={250}
-                        activeClass='bg-gray-200 p-2'
-                        className={
-                            'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' + (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
-                        }
-                        to='contact'>
-                        Contact
-                    </Link>
+
                     <a
                         className='items-center font-semibold bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base'
                         href={myResumePDF}
