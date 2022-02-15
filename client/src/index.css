@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh;
+}
+
+.main {
+    position: absolute;
+    z-index: -10;
+    width: 100%;
+    height: 200%;
+    background-image: url('./assets/blob-bg.svg');
+    background-color: white;
+    animation: backgroundAnimation 8s;
+    animation-iteration-count: infinite;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+@keyframes backgroundAnimation {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(300deg);
+    }
+
+    to {
+        filter: hue-rotate(0deg);
+    }
+}
+
+.font-light > *,
+.font-light {
+    font-weight: 300 !important;
+    line-height: 1.2 !important;
+}
+
+.display-1 {
+    font-size: calc(1.625rem + 4.5vw);
+}
+
+.display-5 {
+    font-size: calc(1.425rem + 1.6vw);
+}
+
+.display-6 {
+    font-size: calc(1.375rem + 1.2vw);
+}
+
+.rubberBand {
+    animation: rubberBand 1.2s 1;
+}
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 800ms linear;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 800ms linear;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 800ms linear;
+}
+
+.fade-exit-done {
+    opacity: 0;
+}

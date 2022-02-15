@@ -1,8 +1,0 @@
-.navbar {
-    min-height: 4rem;
-    transition: min-height 0.3s, 0.3s ease-in-out;
-}
-
-.navbar.scrolled {
-    min-height: 4.5rem !important;
-}

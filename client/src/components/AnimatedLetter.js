@@ -11,8 +11,8 @@ const AnimatedLetter = ({ letter, animation }) => {
 
     return (
         <span
-            onMouseEnter={() => setAnimated(() => true)}
-            onAnimationEnd={() => setAnimated(() => false)}
+            onMouseEnter={() => setAnimated(true)}
+            onAnimationEnd={() => setAnimated(false)}
             className={animated ? animation : ''}
             style={{ display: 'block' }}
         >

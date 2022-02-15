@@ -1,20 +1,24 @@
-import { CSSTransition } from 'react-transition-group';
 import Nav from './components/Nav';
-import Hero from './components/Hero';
-import About from './components/About';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Main from './pages/Main';
+import NotFound from './pages/NotFound';
 
 function App() {
+    const location = useLocation();
+
     return (
-        <>
+        <div className='app'>
+            <div className='main'> </div>
             <Nav />
-            <CSSTransition in={true} appear={true} timeout={400} classNames='fade' unmountOnExit>
-                <>
-                    <Hero />
-                    <About />
-                    
-                </>
-            </CSSTransition>
-        </>
+
+            <Routes location={location} key={location.pathname}>
+                <Route exact path='/' element={<Main />} />
+                <Route path='*' element={<NotFound />} />
+            </Routes>
+
+            <Footer />
+        </div>
     );
 }
 
