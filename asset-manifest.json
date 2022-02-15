@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/roynulrohan/roynulrohan.github.io/static/css/main.fb32e281.css",
-    "main.js": "/roynulrohan/roynulrohan.github.io/static/js/main.93160b9f.js",
-    "static/media/stocks-io.png": "/roynulrohan/roynulrohan.github.io/static/media/stocks-io.a464876831f57ea9d828.png",
-    "static/media/blob-bg.svg": "/roynulrohan/roynulrohan.github.io/static/media/blob-bg.54339690b1f2550c4c7b.svg",
-    "static/media/simple-habits.png": "/roynulrohan/roynulrohan.github.io/static/media/simple-habits.a9b5395541e72dfc63dc.png",
-    "static/media/amigo-chat.png": "/roynulrohan/roynulrohan.github.io/static/media/amigo-chat.66b467263332f43c13ea.png",
-    "static/media/my-resume.pdf": "/roynulrohan/roynulrohan.github.io/static/media/my-resume.edc50b6b6c2728a5032a.pdf",
-    "static/media/studentdatabase-api.png": "/roynulrohan/roynulrohan.github.io/static/media/studentdatabase-api.5993982392503326dd24.png",
-    "static/media/algorithm-visualizer.png": "/roynulrohan/roynulrohan.github.io/static/media/algorithm-visualizer.4981ae67c1a096a31b35.png",
-    "index.html": "/roynulrohan/roynulrohan.github.io/index.html",
-    "main.fb32e281.css.map": "/roynulrohan/roynulrohan.github.io/static/css/main.fb32e281.css.map",
-    "main.93160b9f.js.map": "/roynulrohan/roynulrohan.github.io/static/js/main.93160b9f.js.map"
+    "main.css": "/static/css/main.b469d6a0.css",
+    "main.js": "/static/js/main.d000f0f8.js",
+    "static/media/stocks-io.png": "/static/media/stocks-io.a464876831f57ea9d828.png",
+    "static/media/blob-bg.svg": "/static/media/blob-bg.54339690b1f2550c4c7b.svg",
+    "static/media/simple-habits.png": "/static/media/simple-habits.a9b5395541e72dfc63dc.png",
+    "static/media/amigo-chat.png": "/static/media/amigo-chat.66b467263332f43c13ea.png",
+    "static/media/my-resume.pdf": "/static/media/my-resume.edc50b6b6c2728a5032a.pdf",
+    "static/media/studentdatabase-api.png": "/static/media/studentdatabase-api.5993982392503326dd24.png",
+    "static/media/algorithm-visualizer.png": "/static/media/algorithm-visualizer.4981ae67c1a096a31b35.png",
+    "index.html": "/index.html",
+    "main.b469d6a0.css.map": "/static/css/main.b469d6a0.css.map",
+    "main.d000f0f8.js.map": "/static/js/main.d000f0f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb32e281.css",
-    "static/js/main.93160b9f.js"
+    "static/css/main.b469d6a0.css",
+    "static/js/main.d000f0f8.js"
   ]
 }
