@@ -11,11 +11,11 @@ const AnimatedLetter = ({ letter, animation }) => {
 
     return (
         <span
+            onClick={() => setAnimated(true)}
             onMouseEnter={() => setAnimated(true)}
             onAnimationEnd={() => setAnimated(false)}
             className={animated ? animation : ''}
-            style={{ display: 'block' }}
-        >
+            style={{ display: 'block', cursor: 'default', userSelect: 'none' }}>
             {letter}
         </span>
     );

@@ -9,9 +9,9 @@ const titleMessage = 'a Software Engineering student';
 const Hero = () => {
     return (
         <section id='main' className='flex flex-column justify-center items-center p-5 h-screen'>
-            <div className='p-3 flex flex-col space-y-7 items-center'>
-                <div className='text-nowrap text-center text-gray-800 font-light p-4'>
-                    <h1 className='flex text-4xl justify-center'>
+            <div className='p-3 flex flex-col space-y-7 items-center w-full'>
+                <div className='text-nowrap text-center text-gray-800 font-light tracking-tighter p-4'>
+                    <h1 className='flex sm:text-4xl xs:text-3xl text-2xl justify-center'>
                         {helloMessage.split('').map((letter, index) => {
                             return letter !== ' ' ? (
                                 <AnimatedLetter letter={letter} animation='rubberBand' key={`${helloMessage} - ${index}`} />
@@ -20,7 +20,7 @@ const Hero = () => {
                             );
                         })}
                     </h1>
-                    <h1 className='flex text-7xl justify-center mb-5'>
+                    <h1 className='flex md:text-7xl sm:text-6xl text-4xl justify-center mb-5'>
                         {fullName.split('').map((letter, index) => {
                             return letter !== ' ' ? (
                                 <AnimatedLetter letter={letter} animation='rubberBand' key={`${fullName} - ${index}`} />
@@ -29,7 +29,7 @@ const Hero = () => {
                             );
                         })}
                     </h1>
-                    <h1 className='flex text-4xl justify-center'>
+                    <h1 className='flex md:text-4xl sm:text-2xl text-lg justify-center'>
                         {titleMessage.split('').map((letter, index) => {
                             return letter !== ' ' ? (
                                 <AnimatedLetter letter={letter} animation='rubberBand' key={`${titleMessage} - ${index}`} />
@@ -39,7 +39,7 @@ const Hero = () => {
                         })}
                     </h1>
                 </div>
-                <div className='w-2/6 rounded-lg bg-white px-5 shadow-lg flex'>
+                <div className='sm:w-64 w-56 rounded-lg bg-white px-5 shadow-lg flex'>
                     <div className='p-4 transition-all w-56 hover:scale-110'>
                         <a title='GitHub' href='https://github.com/roynulrohan' rel='noreferrer' target='_blank' className='text-dark'>
                             <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 24 24' fill='currentColor'>

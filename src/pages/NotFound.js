@@ -6,12 +6,12 @@ const NotFound = () => {
     return (
         <>
             <ScrollToTop>
-                <TabStyleView className='mt-36'>
+                <TabStyleView className='mt-36' redirect={true}>
                     <div className='flex items-center h-96 justify-center'>
                         <div className='flex flex-col items-center justify-center'>
                             <span className='text-xs font-medium text-blue-600 uppercase '>Error 404</span>
                             <h1 className='block mt-2 text-2xl font-semibold text-gray-800 '>
-                                Oops! Couldn't find the the page <code className='text-red-600'>{window.location.pathname}</code>
+                                Oops! Couldn't find the the page <code className='text-red-600'>{window.location.hash.replace('#','')}</code>
                             </h1>
 
                             <div className='mt-8'>

@@ -1,12 +1,14 @@
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Main from './pages/Main';
 import NotFound from './pages/NotFound';
 import { useEffect } from 'react';
 import { scroller } from 'react-scroll';
+import StocksProject from './pages/StocksProject';
+import AmigoProject from './pages/AmigoProject';
 
-function App() {
+const App = () => {
     const location = useLocation();
 
     useEffect(() => {
@@ -25,12 +27,14 @@ function App() {
 
             <Routes location={location} key={location.pathname}>
                 <Route exact path='/' element={<Main />} />
+                <Route exact path='/projects/stocks-io' element={<StocksProject />} />
+                <Route exact path='/projects/amigo-chat' element={<AmigoProject />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
 
             <Footer />
         </div>
     );
-}
+};
 
 export default App;

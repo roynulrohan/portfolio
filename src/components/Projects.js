@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-import stocksIoImg from '../assets/project-screenshots/stocks-io.png';
-import studentDatabaseAPIImg from '../assets/project-screenshots/studentdatabase-api.png';
-import amigoChatImg from '../assets/project-screenshots/amigo-chat.png';
-import simpleHabitsImg from '../assets/project-screenshots/simple-habits.png';
-import algorithmImg from '../assets/project-screenshots/algorithm-visualizer.png';
+import stocksIoImg from '../assets/thumbnails/stocks-io.png';
+import studentDatabaseAPIImg from '../assets/thumbnails/studentdatabase-api.png';
+import amigoChatImg from '../assets/thumbnails/amigo-chat.png';
+import simpleHabitsImg from '../assets/thumbnails/simple-habits.png';
+import algorithmImg from '../assets/thumbnails/algorithm-visualizer.png';
 
 const projects = [
     {
@@ -44,9 +44,8 @@ const projects = [
         subtitle: 'Mobile App',
         description: 'A habit tracker app where users can set weekly goals and track daily progress for changing habits.',
         image: simpleHabitsImg,
-        tech: 'Dart, Flutter, SQFLite, Cross-Platform',
+        tech: 'Dart, Flutter, SQLite, Cross-Platform',
         to: '/projects/simple-habits',
-        cover: true,
     },
 ];
 
@@ -54,12 +53,12 @@ const Projects = () => {
     return (
         <section id='projects' className='p-4 px-6'>
             <h1 className='text-4xl font-semibold mb-4 font-mono text-center'>Projects</h1>
-            <div className='flex flex-wrap justify-center sm:justify-start'>
+            <div className='flex flex-wrap justify-center lg:justify-start'>
                 {projects.map((project) => {
                     return (
                         <Link className='lg:w-1/3 p-4 hover:scale-105 transition-transform' to={project.to} key={project.name}>
                             <div className='bg-gray-200 rounded-lg p-1'>
-                                <img className={'h-64 rounded w-full object-center' + (project.cover && ' object-cover')} src={project.image} alt='content' />
+                                <img className='h-64 rounded w-full object-left object-cover ' src={project.image} alt='content' />
                                 <div className='p-2 px-3 flex flex-col space-y-1'>
                                     <h3 className='tracking-wider text-indigo-500 text-sm font-medium title-font'>{project.subtitle}</h3>
                                     <h2 className='text-lg text-gray-900 font-medium title-font'>{project.name}</h2>

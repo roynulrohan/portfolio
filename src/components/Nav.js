@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
-import myResumePDF from '../assets/my-resume.pdf';
+import myResumePDF from '../assets/Resume-RoynulRohan.pdf';
 
 const Nav = () => {
     const [didScroll, setDidScroll] = useState(true);
@@ -20,10 +20,11 @@ const Nav = () => {
 
     return (
         <header className='text-gray-600 body-font fixed z-50 w-full'>
-            <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
-                <div
+            <div className='container mx-auto flex flex-wrap p-5 flex-col-reverse md:flex-row items-center'>
+                <RouterLink
+                    to='/'
                     className={
-                        ' title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-default hidden sm:flex transition-all' +
+                        ' title-font font-medium cursor-pointer items-center text-gray-900 mt-5 md:mt-0 md:mb-0 hidden sm:flex transition-all' +
                         (didScroll ? ' ' : ' opacity-0')
                     }>
                     <span className='ml-3 text-xl w-24'>
@@ -63,13 +64,13 @@ const Nav = () => {
                             </g>
                         </svg>
                     </span>
-                </div>
+                </RouterLink>
                 <nav
                     className={
                         'md:ml-auto text-gray-700 flex flex-wrap items-center text-base justify-center transition-all' +
                         (didScroll ? '' : ' bg-white px-4 p-2 rounded-xl shadow-lg')
                     }>
-                    {window.location.pathname === '/' ? (
+                    {window.location.hash === '#/' ? (
                         <>
                             <Link
                                 smooth
@@ -144,7 +145,7 @@ const Nav = () => {
                     )}
 
                     <a
-                        className='items-center font-semibold bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base'
+                        className='items-center font-semibold bg-purple-600 text-white border-0 py-1 px-3 focus:outline-none hover:bg-purple-700 rounded text-base'
                         href={myResumePDF}
                         rel='noreferrer'
                         target='_blank'>
