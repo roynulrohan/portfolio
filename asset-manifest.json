@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.54df9fa8.css",
-    "main.js": "/static/js/main.d000f0f8.js",
+    "main.css": "/static/css/main.69f524c7.css",
+    "main.js": "/static/js/main.b4fabcab.js",
     "static/media/blob_bg.png": "/static/media/blob_bg.50f0e921506948732d26.png",
+    "static/media/Stock-Page.png": "/static/media/Stock-Page.a464876831f57ea9d828.png",
     "static/media/stocks-io.png": "/static/media/stocks-io.a464876831f57ea9d828.png",
+    "static/media/Market-Page.png": "/static/media/Market-Page.7edd71df1d9d4eaf0467.png",
     "static/media/simple-habits.png": "/static/media/simple-habits.a9b5395541e72dfc63dc.png",
-    "static/media/amigo-chat.png": "/static/media/amigo-chat.66b467263332f43c13ea.png",
-    "static/media/my-resume.pdf": "/static/media/my-resume.edc50b6b6c2728a5032a.pdf",
+    "static/media/new-contact.png": "/static/media/new-contact.3fbfdcb4847235edda4d.png",
+    "static/media/conversation.png": "/static/media/conversation.c0ac859a6c7aa9a5509a.png",
+    "static/media/Home-Page.png": "/static/media/Home-Page.6e065f0a528420d5e5bd.png",
+    "static/media/amigo-chat.png": "/static/media/amigo-chat.87c4cda456e33b32415b.png",
+    "static/media/Account-Page.png": "/static/media/Account-Page.0a977009ecfec5213abc.png",
+    "static/media/Resume-RoynulRohan.pdf": "/static/media/Resume-RoynulRohan.377101f707e3b2e1805e.pdf",
+    "static/media/home.png": "/static/media/home.42ddfbd2a5f45fb7f1a0.png",
     "static/media/studentdatabase-api.png": "/static/media/studentdatabase-api.5993982392503326dd24.png",
+    "static/media/login.png": "/static/media/login.9fc338f51b5d94a99b22.png",
     "static/media/algorithm-visualizer.png": "/static/media/algorithm-visualizer.4981ae67c1a096a31b35.png",
     "index.html": "/index.html",
-    "main.54df9fa8.css.map": "/static/css/main.54df9fa8.css.map",
-    "main.d000f0f8.js.map": "/static/js/main.d000f0f8.js.map"
+    "main.69f524c7.css.map": "/static/css/main.69f524c7.css.map",
+    "main.b4fabcab.js.map": "/static/js/main.b4fabcab.js.map"
   },
   "entrypoints": [
-    "static/css/main.54df9fa8.css",
-    "static/js/main.d000f0f8.js"
+    "static/css/main.69f524c7.css",
+    "static/js/main.b4fabcab.js"
   ]
 }
