@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
-import myResumePDF from '../assets/Resume-RoynulRohan-Censored.pdf';
 
 const Nav = () => {
     const [didScroll, setDidScroll] = useState(true);
