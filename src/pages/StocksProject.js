@@ -36,10 +36,8 @@ const StocksProject = () => {
                                 <br />
                                 <br />
                                 The front-end is a single page React application. The back-end is a GraphQL API that makes queries to a MongoDB Atlas cluster.
-                                Real-time price updates are done via a socket connection between server and client. A JWT solution is implemented for authentication. Application is dockerized using Docker
-                                compose and deployed to Azure Cloud App Services. Deployment process is simplified by using GitHub Actions to create a CI/CD
-                                pipeline that creates a Docker image of the app on every commit to the master branch and pushes it to Azure Cloud Container
-                                Registry which then gets deployed.
+                                Real-time price updates are done via a socket connection between server and client. A JWT solution is implemented for
+                                authentication. Server is dockerized and deployed to a Digital Ocean droplet running Ubuntu. Client is hosted on Vercel.
                             </p>
                             <div className='mt-10'>
                                 <div className='mt-3'>
@@ -57,7 +55,7 @@ const StocksProject = () => {
                                     </div>
                                     <div className='flex space-x-3 items-center mt-3'>
                                         <h5 className='w-fit leading-tight rounded-lg font-medium text-blue-500'>Other:</h5>
-                                        <h5 className=''>Docker, Azure App Services, Azure Container Registry, Git, Github Actions</h5>
+                                        <h5 className=''>Docker, Vercel Hosting, Digital Ocean Ubuntu Droplet</h5>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +74,7 @@ const StocksProject = () => {
                                     <span class='ml-2'>Code</span>
                                 </a>
                                 <a
-                                    href='https://stocks-io.azurewebsites.net/'
+                                    href='https://stocks-io.vercel.app'
                                     rel='noreferrer'
                                     target='_blank'
                                     class='flex items-center p-2 px-4 bg-teal-500 hover:bg-teal-600 rounded-lg text-white'>
@@ -97,7 +95,7 @@ const StocksProject = () => {
                             </div>
                         </div>
                         <div className='mt-10 bg-gray-300 p-2 rounded-xl'>
-                            <ImageGallery items={images} showPlayButton={false} additionalClass={"rounded-lg"} />
+                            <ImageGallery items={images} showPlayButton={false} additionalClass={'rounded-lg'} />
                         </div>
                     </div>
                 </TabStyleView>
