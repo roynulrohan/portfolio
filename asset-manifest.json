@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.afbaa0aa.css",
-    "main.js": "/static/js/main.d515d6d6.js",
+    "main.js": "/static/js/main.df760c53.js",
     "static/media/pet-connect.png": "/static/media/pet-connect.144c3b6b85913762e87c.png",
     "static/media/blob_bg.png": "/static/media/blob_bg.50f0e921506948732d26.png",
     "static/media/Stock-Page.png": "/static/media/Stock-Page.a464876831f57ea9d828.png",
     "static/media/stocks-io.png": "/static/media/stocks-io.a464876831f57ea9d828.png",
     "static/media/Market-Page.png": "/static/media/Market-Page.7edd71df1d9d4eaf0467.png",
-    "static/media/Resume-RoynulRohan-Censored.pdf": "/static/media/Resume-RoynulRohan-Censored.ee3af31b3a7de55eed3c.pdf",
     "static/media/simple-habits.png": "/static/media/simple-habits.a9b5395541e72dfc63dc.png",
     "static/media/new-contact.png": "/static/media/new-contact.3fbfdcb4847235edda4d.png",
     "static/media/conversation.png": "/static/media/conversation.c0ac859a6c7aa9a5509a.png",
@@ -20,10 +19,10 @@
     "static/media/algorithm-visualizer.png": "/static/media/algorithm-visualizer.4981ae67c1a096a31b35.png",
     "index.html": "/index.html",
     "main.afbaa0aa.css.map": "/static/css/main.afbaa0aa.css.map",
-    "main.d515d6d6.js.map": "/static/js/main.d515d6d6.js.map"
+    "main.df760c53.js.map": "/static/js/main.df760c53.js.map"
   },
   "entrypoints": [
     "static/css/main.afbaa0aa.css",
-    "static/js/main.d515d6d6.js"
+    "static/js/main.df760c53.js"
   ]
 }
