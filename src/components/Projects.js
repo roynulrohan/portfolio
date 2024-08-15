@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { RxExternalLink } from 'react-icons/rx';
+import { FaGithub } from 'react-icons/fa';
 
 import stocksIoImg from '../assets/thumbnails/stocks-io.png';
 import studentDatabaseAPIImg from '../assets/thumbnails/studentdatabase-api.png';
@@ -16,6 +17,7 @@ const projects = [
         image: petConnectImg,
         tech: 'React Native CLI, Apollo GraphQL, Express.js, MySQL, Redux, TypeScript, TailwindCSS, Auth0, Jira, Docker',
         // to: '/projects/stocks-io',
+        repository: 'https://github.com/FinalScript/pet-connect',
     },
     {
         name: 'Stocks.io',
@@ -24,6 +26,7 @@ const projects = [
         image: stocksIoImg,
         tech: 'MERN, Redux, GraphQL, TypeScript, TailwindCSS, JWT, Socket.io, Docker, Azure Apps, DevOps',
         to: '/projects/stocks-io',
+        repository: 'https://github.com/roynulrohan/Stocks.io',
     },
     {
         name: 'Amigo Chat',
@@ -32,6 +35,7 @@ const projects = [
         image: amigoChatImg,
         tech: 'MERN, Redux, Bootstrap, Sass, Socket.io',
         to: '/projects/amigo-chat',
+        repository: 'https://github.com/roynulrohan/amigo-V2',
     },
     {
         name: 'Student Database API',
@@ -40,6 +44,7 @@ const projects = [
         image: studentDatabaseAPIImg,
         tech: 'Java, Spring Boot, JUnit, PostgreSQL, AWS EC2, RHEL, Azure Apps',
         //to: '/projects/studentdatabase-api',
+        repository: 'https://github.com/roynulrohan/StudentDatabase',
     },
     {
         name: 'Algorithm Visualizer',
@@ -48,6 +53,7 @@ const projects = [
         image: algorithmImg,
         tech: 'React, JavaScript, Sorting Algorithms',
         // to: '/projects/algorithm-visualizer',
+        repository: 'https://github.com/roynulrohan/StudentDatabase',
     },
     {
         name: 'Simple Habits',
@@ -56,6 +62,7 @@ const projects = [
         image: simpleHabitsImg,
         tech: 'Dart, Flutter, SQLite, Cross-Platform',
         //to: '/projects/simple-habits',
+        repository: 'https://github.com/roynulrohan/simple-habits',
     },
 ];
 
@@ -84,8 +91,26 @@ const Projects = () => {
                                 )}
                                 <img className='h-64 rounded w-full object-cover' src={project.image} alt='content' />
                                 <div className='p-2 px-3 flex flex-col items-start space-y-1'>
-                                    <h3 className='tracking-wider text-indigo-500 text-sm font-medium title-font'>{project.subtitle}</h3>
-                                    <h2 className='text-lg text-gray-900 font-medium title-font'>{project.name}</h2>
+                                    <div className='flex justify-between items-start w-full'>
+                                        <div>
+                                            <h3 className='tracking-wider text-indigo-500 text-sm font-medium title-font'>{project.subtitle}</h3>
+                                            <h2 className='text-lg text-gray-900 font-medium title-font'>{project.name}</h2>
+                                        </div>
+
+                                        {project.repository && (
+                                            <a
+                                                onClick={(e) => {
+                                                    e.stopPropagation();
+                                                }}
+                                                href={project.repository}
+                                                target='_blank'
+                                                rel='noreferrer'
+                                                className='bg-zinc-300 py-1 px-3 rounded-xl flex gap-x-2'>
+                                                <FaGithub size={25} className='' />
+                                                <p>Repo</p>
+                                            </a>
+                                        )}
+                                    </div>
                                     <div className='divide-gray-400 divide-y-2 flex flex-col items-start'>
                                         <p className='leading-relaxed text-sm font-light pb-2'>{project.description}</p>
                                         <div className='flex flex-wrap pt-2'>
