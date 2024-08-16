@@ -22,3 +22,5 @@ jobs:
           docker compose kill
           docker compose up --build -d
         EOF
+      env:
+        SERVER_PASSWORD: ${{ secrets.SERVER_PASSWORD }}
