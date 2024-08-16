@@ -5,7 +5,7 @@ import Projects from '../views/Projects';
 
 const helloMessage = "Hello, I'm";
 const fullName = 'Roynul Rohan';
-const titleMessage = 'Software Engineer';
+const titleMessage = 'a Software Engineer';
 
 export default function Home() {
     return (
