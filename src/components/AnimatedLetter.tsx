@@ -1,6 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-const AnimatedLetter = ({ letter, animation }) => {
+interface AnimatedLetterProps {
+    letter: string;
+    animation: string;
+}
+
+const AnimatedLetter = ({ letter, animation }: AnimatedLetterProps) => {
     const [animated, setAnimated] = useState(false);
 
     useEffect(() => {
