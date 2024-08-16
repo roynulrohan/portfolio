@@ -3,7 +3,7 @@ name: Remote Server SSH
 on:
   push:
     branches:
-      - main
+      - master  # Triggers the workflow on changes to the master branch
 
 jobs:
   deploy:
@@ -25,5 +25,5 @@ jobs:
           echo "Logged into the server"
           cd projects/portfolio
           docker compose kill
-          docker compose up -d
+          docker compose up --build -d
         EOF
