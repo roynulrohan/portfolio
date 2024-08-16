@@ -1,5 +1,3 @@
-import { CSSTransition } from 'react-transition-group';
-
 const Footer = () => {
     return (
         <div className='bg-dark text-light text-center p-3 mt-auto'>

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-const TabStyleView = (props) => {
+const TabStyleView = (props: any) => {
     const navigate = useNavigate();
 
     return (
