@@ -13,7 +13,7 @@ function App() {
 
     useEffect(() => {
         if (location.state && location.state.scrollTo) {
-            scroller.scrollTo(location.state.scrollTo, { smooth: true, duration: 400 });
+            scroller.scrollTo(location.state.scrollTo, { smooth: false });
         }
     }, [location.state]);
 

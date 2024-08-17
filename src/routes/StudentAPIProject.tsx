@@ -1,6 +1,7 @@
 import TabStyleView from '../components/TabStyleView';
 import ScrollToTop from '../components/ScrollToTop';
 import ImageGallery from 'react-image-gallery';
+import { useEffect } from 'react';
 
 const images: {
     original: any;
@@ -8,6 +9,10 @@ const images: {
 }[] = [];
 
 const StudentAPIProject = () => {
+    useEffect(() => {
+        document.title = 'Student Database API | Portfolio';
+    }, []);
+
     return (
         <>
             <ScrollToTop>

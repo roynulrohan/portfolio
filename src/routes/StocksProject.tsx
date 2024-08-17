@@ -5,6 +5,7 @@ import homePageImg from '../assets/screenshots/stocks-io/Home-Page.png';
 import marketPageImg from '../assets/screenshots/stocks-io/Market-Page.png';
 import stockPageImg from '../assets/screenshots/stocks-io/Stock-Page.png';
 import accountPageImg from '../assets/screenshots/stocks-io/Account-Page.png';
+import { useEffect } from 'react';
 
 const images = [
     {
@@ -26,6 +27,10 @@ const images = [
 ];
 
 const StocksProject = () => {
+    useEffect(() => {
+        document.title = 'Stocks.io | Portfolio';
+    }, []);
+
     return (
         <>
             <ScrollToTop>

@@ -5,6 +5,7 @@ import homePagePic from '../assets/screenshots/amigo-chat/home.png';
 import conversationPic from '../assets/screenshots/amigo-chat/conversation.png';
 import newContactPic from '../assets/screenshots/amigo-chat/new-contact.png';
 import loginPic from '../assets/screenshots/amigo-chat/login.png';
+import { useEffect } from 'react';
 
 const images = [
     {
@@ -26,6 +27,10 @@ const images = [
 ];
 
 const AmigoProject = () => {
+    useEffect(() => {
+        document.title = 'Amigo Chat V2 | Portfolio';
+    }, []);
+
     return (
         <>
             <ScrollToTop>
@@ -40,9 +45,9 @@ const AmigoProject = () => {
                                 picture.
                                 <br />
                                 <br />
-                                The front-end is a Next.js application that utilizes TypeScript and Redux. The back-end is a GraphQL API that
-                                utilizes Mongoose to makes queries to a MongoDB Atlas cluster where all messages are stored. Connections between users are
-                                established via sockets. Application is containerized using Docker and deployed to a personal Ubuntu Server.
+                                The front-end is a Next.js application that utilizes TypeScript and Redux. The back-end is a GraphQL API that utilizes Mongoose
+                                to makes queries to a MongoDB Atlas cluster where all messages are stored. Connections between users are established via
+                                sockets. Application is containerized using Docker and deployed to a personal Ubuntu Server.
                             </p>
                             <div className='mt-10'>
                                 <div className='mt-3'>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import AnimatedLetter from '../components/AnimatedLetter';
 import TabStyleView from '../components/TabStyleView';
 import Contact from '../views/Contact';
@@ -8,6 +9,10 @@ const fullName = 'Roynul Rohan';
 const titleMessage = 'a Software Developer';
 
 export default function Home() {
+    useEffect(() => {
+        document.title = 'Roynul Rohan | Portfolio';
+    }, []);
+
     return (
         <>
             <section id='main' className='flex flex-column justify-center items-center p-5 h-screen'>

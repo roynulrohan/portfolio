@@ -1,9 +1,14 @@
 import { useNavigate } from 'react-router-dom';
 import ScrollToTop from '../components/ScrollToTop';
 import TabStyleView from '../components/TabStyleView';
+import { useEffect } from 'react';
 
 export default function ErrorPage() {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        document.title = 'Error 404 | Portfolio';
+    }, []);
 
     return (
         <ScrollToTop>
