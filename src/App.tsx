@@ -15,6 +15,10 @@ function App() {
         if (location.state && location.state.scrollTo) {
             scroller.scrollTo(location.state.scrollTo, { smooth: false });
         }
+
+        return () => {
+            scroller.scrollTo('main', { smooth: false });
+        }
     }, [location.state]);
 
     return (
