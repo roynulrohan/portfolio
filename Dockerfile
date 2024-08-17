@@ -19,6 +19,13 @@ RUN npm run build
 # Use the official nginx image as the base image
 FROM nginx
 
+# Remove the default nginx configuration
+RUN rm /etc/nginx/conf.d/default.conf
+
+
+# Copy the custom nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/
+
 # Copy the static build from the builder stage to the nginx default public directory
 COPY --from=builder /app/dist /usr/share/nginx/html
 
