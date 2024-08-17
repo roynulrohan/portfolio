@@ -57,39 +57,79 @@ const Nav = () => {
                         'md:ml-auto text-gray-700 flex flex-wrap items-center text-base justify-center transition-all' +
                         (didScroll ? '' : ' bg-white px-4 p-2 rounded-xl shadow-lg')
                     }>
-                    <Link
-                        smooth
-                        spy
-                        duration={150}
-                        activeClass='bg-gray-100 p-2'
-                        className={
-                            'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' + (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
-                        }
-                        to='main'>
-                        About
-                    </Link>
-                    <Link
-                        smooth
-                        spy
-                        duration={250}
-                        activeClass='bg-gray-200 p-2'
-                        className={
-                            'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' + (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
-                        }
-                        to='projects'>
-                        Projects
-                    </Link>
-                    <Link
-                        smooth
-                        spy
-                        duration={250}
-                        activeClass='bg-gray-200 p-2'
-                        className={
-                            'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' + (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
-                        }
-                        to='contact'>
-                        Contact
-                    </Link>
+                    {window.location.pathname === '/' ? (
+                        <>
+                            <Link
+                                smooth
+                                spy
+                                duration={150}
+                                activeClass='bg-gray-100 p-2'
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='main'>
+                                About
+                            </Link>
+                            <Link
+                                smooth
+                                spy
+                                duration={250}
+                                activeClass='bg-gray-200 p-2'
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='projects'>
+                                Projects
+                            </Link>
+                            <Link
+                                smooth
+                                spy
+                                duration={250}
+                                activeClass='bg-gray-200 p-2'
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='contact'>
+                                Contact
+                            </Link>
+                        </>
+                    ) : (
+                        <>
+                            <RouterLink
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='/'>
+                                About
+                            </RouterLink>
+                            <RouterLink
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='/'
+                                state={{
+                                    scrollTo: 'projects',
+                                }}>
+                                Projects
+                            </RouterLink>
+                            <RouterLink
+                                className={
+                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                }
+                                to='/'
+                                state={{
+                                    scrollTo: 'contact',
+                                }}>
+                                Contact
+                            </RouterLink>
+                        </>
+                    )}
 
                     <a
                         className='items-center font-semibold bg-emerald-500 text-white py-2 px-4 hover:bg-emerald-600 rounded-xl text-base'

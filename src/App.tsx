@@ -1,24 +1,32 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './routes/Home';
 import ErrorPage from './routes/Error';
 import StocksProject from './routes/StocksProject';
 import AmigoProject from './routes/AmigoProject';
 import StudentAPIProject from './routes/StudentAPIProject';
+import { useEffect } from 'react';
+import { scroller } from 'react-scroll';
 
 function App() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state && location.state.scrollTo) {
+            scroller.scrollTo(location.state.scrollTo, { smooth: true, duration: 400 });
+        }
+    }, [location.state]);
+
     return (
-        <Router>
-            <Routes>
-                <Route path='/' element={<Layout />}>
-                    <Route index element={<Home />} />
-                    <Route path='/projects/stocks-io' element={<StocksProject />} />
-                    <Route path='/projects/amigo-chat' element={<AmigoProject />} />
-                    <Route path='/projects/student-database-api' element={<StudentAPIProject />} />
-                    <Route path='*' element={<ErrorPage />} />
-                </Route>
-            </Routes>
-        </Router>
+        <Routes>
+            <Route path='/' element={<Layout />}>
+                <Route index element={<Home />} />
+                <Route path='/projects/stocks-io' element={<StocksProject />} />
+                <Route path='/projects/amigo-chat' element={<AmigoProject />} />
+                <Route path='/projects/student-database-api' element={<StudentAPIProject />} />
+                <Route path='*' element={<ErrorPage />} />
+            </Route>
+        </Routes>
     );
 }
 

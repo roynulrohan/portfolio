@@ -3,9 +3,12 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import './index.css';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <App />
+        <Router>
+            <App />
+        </Router>
     </StrictMode>
 );
