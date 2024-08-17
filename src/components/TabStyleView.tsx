@@ -22,7 +22,7 @@ const TabStyleView = (props: any) => {
                         <div className='bg-orange-300 h-3 w-3 sm:h-4 sm:w-4 rounded-full'></div>
                         <div className='bg-green-500 h-3 w-3 sm:h-4 sm:w-4 rounded-full'></div>
                         <p className='pl-4 text-xs'>
-                            {window.location.hostname + (props.location ? '/' + props.location : window.location.hash.replace('#', ''))}
+                            {window.location.hostname + window.location.pathname}
                         </p>
                     </div>
                 </div>
