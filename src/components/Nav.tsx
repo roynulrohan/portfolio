@@ -133,7 +133,7 @@ const Nav = () => {
 
                     <a
                         className='items-center font-semibold bg-emerald-500 text-white py-2 px-4 hover:bg-emerald-600 rounded-xl text-base'
-                        href='https://docs.google.com/document/d/1EgAWEuDRXwBiVmBI5EMua1kjWvMcJV-Y/edit?usp=drive_link&ouid=111903615197492780328&rtpof=true&sd=true'
+                        href='https://drive.google.com/drive/folders/1CcyBnpcCUXsmUugoFKdOXfbcInDSyTXs?usp=sharing'
                         rel='noreferrer'
                         target='_blank'>
                         Resume
