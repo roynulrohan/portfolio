@@ -55,7 +55,8 @@ const projects = [
         image: algorithmImg,
         tech: 'React, JavaScript, Sorting Algorithms',
         // to: '/projects/algorithm-visualizer',
-        repository: 'https://algorithm-visualizer-dcba8.web.app',
+        repository: 'https://github.com/roynulrohan/algorithm-visualizer',
+        live: 'https://algorithm-visualizer-dcba8.web.app/',
     },
     {
         name: 'Simple Habits',
