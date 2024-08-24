@@ -67,6 +67,7 @@ export default function Home() {
 
             <TabStyleView className='mb-44'>
                 <Projects />
+                <hr className='border-zinc-300 mx-20 my-10' />
                 <Contact />
             </TabStyleView>
         </>
