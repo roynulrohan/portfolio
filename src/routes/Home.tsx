@@ -17,7 +17,7 @@ export default function Home() {
         <>
             <section id='main' className='flex flex-column justify-center items-center p-5 h-screen'>
                 <div className='p-3 flex flex-col space-y-7 items-center w-full'>
-                    <div className='text-nowrap text-center text-gray-800 font-light tracking-tighter p-4'>
+                    <div className='text-nowrap text-center text-zinc-800 font-light tracking-tighter p-4'>
                         <h1 className='flex sm:text-4xl xs:text-3xl text-2xl justify-center'>
                             {helloMessage.split('').map((letter, index) => {
                                 return letter !== ' ' ? (

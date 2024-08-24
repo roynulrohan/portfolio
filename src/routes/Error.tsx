@@ -16,7 +16,7 @@ export default function ErrorPage() {
                 <div className='flex items-center h-96 justify-center'>
                     <div className='flex flex-col items-center justify-center'>
                         <span className='text-xs font-semibold text-red-600 uppercase '>Error 404</span>
-                        <h1 className='block mt-2 text-2xl font-semibold text-gray-800 '>
+                        <h1 className='block mt-2 text-2xl font-semibold text-zinc-800 '>
                             Oops! Couldn't find the page <code className='text-red-500'>{window.location.pathname}</code>
                         </h1>
 

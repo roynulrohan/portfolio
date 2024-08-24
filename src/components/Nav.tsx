@@ -18,12 +18,12 @@ const Nav = () => {
     }, []);
 
     return (
-        <header className='text-gray-600 body-font fixed z-50 w-full'>
+        <header className='text-zinc-600 body-font fixed z-50 w-full'>
             <div className='container mx-auto flex flex-wrap p-5 flex-col-reverse md:flex-row items-center'>
                 <RouterLink
                     to='/'
                     className={
-                        ' title-font font-medium cursor-pointer items-center text-gray-900 mt-5 md:mt-0 md:mb-0 hidden sm:flex transition-all' +
+                        ' title-font font-medium cursor-pointer items-center text-zinc-900 mt-5 md:mt-0 md:mb-0 hidden sm:flex transition-all' +
                         (didScroll ? ' ' : ' opacity-0')
                     }>
                     <span className='ml-3 text-xl w-24'>
@@ -54,7 +54,7 @@ const Nav = () => {
                 </RouterLink>
                 <nav
                     className={
-                        'md:ml-auto text-gray-700 flex flex-wrap items-center text-base justify-center transition-all' +
+                        'md:ml-auto text-zinc-700 flex flex-wrap items-center text-base justify-center transition-all' +
                         (didScroll ? '' : ' bg-white px-4 p-2 rounded-xl shadow-lg')
                     }>
                     {window.location.pathname === '/' ? (
@@ -63,10 +63,10 @@ const Nav = () => {
                                 smooth
                                 spy
                                 duration={150}
-                                activeClass='bg-gray-100 p-2'
+                                activeClass='bg-zinc-100 p-2'
                                 className={
-                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
-                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                    'mr-5 hover:text-zinc-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-zinc-200 p-2')
                                 }
                                 to='main'>
                                 About
@@ -75,10 +75,10 @@ const Nav = () => {
                                 smooth
                                 spy
                                 duration={250}
-                                activeClass='bg-gray-200 p-2'
+                                activeClass='bg-zinc-200 p-2'
                                 className={
-                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
-                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                    'mr-5 hover:text-zinc-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-zinc-200 p-2')
                                 }
                                 to='projects'>
                                 Projects
@@ -87,10 +87,10 @@ const Nav = () => {
                                 smooth
                                 spy
                                 duration={250}
-                                activeClass='bg-gray-200 p-2'
+                                activeClass='bg-zinc-200 p-2'
                                 className={
-                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
-                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                    'mr-5 hover:text-zinc-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-zinc-200 p-2')
                                 }
                                 to='contact'>
                                 Contact
@@ -100,16 +100,16 @@ const Nav = () => {
                         <>
                             <RouterLink
                                 className={
-                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
-                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                    'mr-5 hover:text-zinc-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-zinc-200 p-2')
                                 }
                                 to='/'>
                                 About
                             </RouterLink>
                             <RouterLink
                                 className={
-                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
-                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                    'mr-5 hover:text-zinc-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-zinc-200 p-2')
                                 }
                                 to='/'
                                 state={{
@@ -119,8 +119,8 @@ const Nav = () => {
                             </RouterLink>
                             <RouterLink
                                 className={
-                                    'mr-5 hover:text-gray-900 cursor-pointer rounded-xl transition-all ' +
-                                    (didScroll ? 'hover:scale-110' : 'hover:bg-gray-200 p-2')
+                                    'mr-5 hover:text-zinc-900 cursor-pointer rounded-xl transition-all ' +
+                                    (didScroll ? 'hover:scale-110' : 'hover:bg-zinc-200 p-2')
                                 }
                                 to='/'
                                 state={{

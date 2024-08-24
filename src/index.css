@@ -31,7 +31,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url('./assets/blob_bg.png');
-    background-color: white;
+    background-color: theme('colors.zinc.50');
     animation: backgroundAnimation 8s;
     animation-iteration-count: infinite;
     transition: all;

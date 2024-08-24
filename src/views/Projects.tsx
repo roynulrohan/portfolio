@@ -85,13 +85,13 @@ const Projects = () => {
                                 }
                             }}
                             key={i}>
-                            <div className='bg-gray-100 rounded-lg p-1 relative shadow-md shadow-gray-200'>
+                            <div className='bg-zinc-100 rounded-lg p-1 relative shadow-md shadow-zinc-200'>
                                 <img className='h-64 rounded w-full object-cover' src={project.image} alt='content' />
                                 <div className='p-2 px-3 flex flex-col items-start space-y-1'>
                                     <div className='flex justify-between items-start w-full'>
                                         <div>
                                             <h3 className='tracking-wider text-indigo-500 text-sm font-medium title-font'>{project.subtitle}</h3>
-                                            <h2 className='text-lg text-gray-900 font-medium title-font'>{project.name}</h2>
+                                            <h2 className='text-lg text-zinc-900 font-medium title-font'>{project.name}</h2>
                                         </div>
 
                                         <div className='flex gap-x-2'>
@@ -103,7 +103,7 @@ const Projects = () => {
                                                     href={project.repository}
                                                     target='_blank'
                                                     rel='noreferrer'
-                                                    className='bg-zinc-700 hover:bg-gray-800 text-white py-1 px-3 rounded-xl flex items-center gap-x-2'>
+                                                    className='bg-zinc-700 hover:bg-zinc-800 text-white py-1 px-3 rounded-xl flex items-center gap-x-2'>
                                                     <p className='text-sm'>Code</p>
                                                     <LuCode2 size={20} className='' />
                                                 </a>
@@ -123,13 +123,13 @@ const Projects = () => {
                                             )}
                                         </div>
                                     </div>
-                                    <div className='divide-gray-400 divide-y-2 flex flex-col items-start'>
+                                    <div className='divide-zinc-400 divide-y-2 flex flex-col items-start'>
                                         <p className='leading-relaxed text-sm font-light pb-2'>{project.description}</p>
                                         <div className='flex flex-wrap pt-2'>
                                             {project.tech.split(',').map((tag) => {
                                                 return (
                                                     <p
-                                                        className='leading-relaxed text-sm font-light p-1 px-3 mr-2 mt-2 rounded-3xl bg-gray-300'
+                                                        className='leading-relaxed text-sm font-light p-1 px-3 mr-2 mt-2 rounded-3xl bg-zinc-300'
                                                         key={project.name + tag}>
                                                         {tag.trim()}
                                                     </p>

@@ -23,13 +23,13 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='relative flex w-1/4 pt-7 items-center'>
-                    <div className='flex-grow border-t border-gray-400'></div>
-                    <span className='flex-shrink mx-4 text-xl text-gray-400'>or</span>
-                    <div className='flex-grow border-t border-gray-400'></div>
+                    <div className='flex-grow border-t border-zinc-400'></div>
+                    <span className='flex-shrink mx-4 text-xl text-zinc-400'>or</span>
+                    <div className='flex-grow border-t border-zinc-400'></div>
                 </div>
                 <form action='https://formspree.io/f/xknpqrew' method='POST' className='xl:w-1/3 lg:w-1/2  rounded-lg p-8 flex flex-col w-full mt-10 md:mt-0'>
                     <div className='relative mb-4'>
-                        <label htmlFor='emailInput' className='leading-7 text-sm text-gray-600'>
+                        <label htmlFor='emailInput' className='leading-7 text-sm text-zinc-600'>
                             Email
                         </label>
                         <input
@@ -39,11 +39,11 @@ const Contact = () => {
                             aria-describedby='emailHelp'
                             placeholder='Enter your email'
                             required
-                            className='w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+                            className='w-full bg-white rounded border border-zinc-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-zinc-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
                         />
                     </div>
                     <div className='relative mb-4'>
-                        <label htmlFor='messageInput' className='leading-7 text-sm text-gray-600'>
+                        <label htmlFor='messageInput' className='leading-7 text-sm text-zinc-600'>
                             Message
                         </label>
                         <textarea
@@ -51,7 +51,7 @@ const Contact = () => {
                             name='message'
                             placeholder='Enter your message'
                             required
-                            className='w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'></textarea>
+                            className='w-full bg-white rounded border border-zinc-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-zinc-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'></textarea>
                     </div>
                     <button
                         title='Submit Form'

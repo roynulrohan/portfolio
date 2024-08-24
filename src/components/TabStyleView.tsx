@@ -5,8 +5,8 @@ const TabStyleView = (props: any) => {
 
     return (
         <div className={'flex items-center justify-center ' + props.className}>
-            <div className='container w-full rounded-xl bg-gray-50 shadow-xl h-full' style={{ minHeight: '60vh' }}>
-                <div className='bg-gray-200 flex px-5 h-10 rounded-t-xl'>
+            <div className='container w-full rounded-xl bg-zinc-50 shadow-xl h-full' style={{ minHeight: '60vh' }}>
+                <div className='bg-zinc-200 flex px-5 h-10 rounded-t-xl'>
                     <div className='flex space-x-2 items-center'>
                         <div
                             className={
